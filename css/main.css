@@ -1,0 +1,350 @@
+/*
+Color palette
+Hot Magenta - #e418d1
+Black - #1d1501
+*/
+
+
+
+
+
+/*************************
+		Global CSS
+**************************/
+
+html{
+	box-sizing : border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+*,*:after,*:before{
+	box-sizing:  inherit;
+}
+
+
+body{
+	background: #1d1501;
+}
+
+.group:before, .group:after{
+	content: "";
+	display: table;
+}
+
+.group:after{
+	clear: both;
+}
+
+
+h1,h2,h3{
+	font-family: 'Baloo Thambi', cursive;
+}
+
+.hide{
+	display: none;
+}
+
+
+
+/*****************************
+		instructions Css
+******************************/
+
+
+	.modal-box{
+		height: 100vh;
+	    background: linear-gradient(rgba(38, 42, 48,0.3), rgba(38, 42, 48,0.1));
+	    position: absolute;
+	    width: 100vw;
+	    top: 0;
+
+	}
+
+	.instructions{
+		position: fixed;
+		width: 40%;
+		background: #FF4275;
+		left: 30vw;
+		animation: 1s drop-in;
+		top: 40vh;
+		color: white;
+		padding: 50px;
+		text-align: center;
+		box-shadow: 3px 3px 1px white;
+	}
+
+	.instructions i{
+		font-size: 30px;
+		background:  -webkit-linear-gradient(#edc97b, #d89e20) ;
+		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+	}
+
+	.close-box{
+		position: absolute;
+		top: 0;
+		right: 0px;
+		padding: 20px;
+		font-size: 1.5em;
+		cursor: pointer;
+	}
+
+	.close{
+		animation: 1s hidebox !important;
+		top:  -9999px !important;
+	}
+
+	.cookie_law{
+		font-size: 0.5em;
+	}
+
+@keyframes drop-in{
+
+	0%{
+		top: -9999px;
+	}
+
+
+	25%{
+		top :  80vh;
+	}
+
+	75%{
+		top:  15vh;
+	}
+
+	100%{
+
+		top: 40vh;
+	}
+
+}
+
+
+
+@keyframes hidebox{	
+	0%{
+
+		top: 40vh;
+	}
+
+	25%{
+		top: 80vh;
+	}
+
+	75%{
+		top : 20vh;
+	}
+
+	90%{
+		top : -300px;
+	}
+
+	100%{
+
+		top: -9999px;
+	}
+
+}
+
+/*****************************
+		Search field Css
+******************************/
+.app-title{ 
+	text-align: center; 
+	font-family: Arial;
+}
+
+#search-box{
+	padding: 20px;
+	text-align: center;
+	background: #FF4275;
+	color: #FFF;
+}
+
+#search-box label{
+    font-family: arial;
+    display: block;
+    font-size: 1.5em;
+}
+
+#search-box input{
+    -webkit-border-radius:  5px;
+    -mox-border-radius: 5px;
+    -o-border-radius:  5px;
+    border-radius:  5px;
+    border: 3px solid #2A0003;
+    width: 250px;
+    height: 30px;
+}
+
+
+
+#search-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 20px; 
+
+}
+
+
+
+/*****************************
+		Code Snip	
+******************************/
+
+.hide-it{ 
+	display: none;
+}
+
+
+#view-code{
+	width: 60vw;
+    height: 400px;
+    margin: 0 auto;
+	position: fixed;
+	overflow: scroll;
+	top :  15vw;
+	left: 20vw;
+}
+
+.fade-it{
+	animation: 2s show-hide;
+	opacity: 0;
+}
+
+.code-snip{
+	animation: 2s show-code;
+}
+
+.code-snip pre{
+	margin: 0;
+}
+
+
+.close-code{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 25px;
+	font-size: 1.5em;
+	color: #FFF;
+	cursor: pointer;
+}
+
+
+.show-code{
+	background: #e418d1;
+	color: #FFF;
+	padding: 20px;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	cursor: pointer;
+}
+
+
+@keyframes show-code{
+
+	0%{
+
+		opacity: 0;
+	}
+
+
+	100%{
+		opacity: 1.0;
+	}
+}
+
+
+@keyframes show-hide{
+
+	0%{
+		opacity: 1.0;
+		display: block;
+	}
+
+
+	70%{
+		opacity: 0;
+		display: block;
+	}
+
+	100%{
+		opacity: 0;
+		display: none;
+	}
+}
+
+
+/******************************
+		Employee 
+******************************/
+
+
+article{
+	box-shadow: 3px 3px 1px white;
+	animation :  fade-in 1s;
+}
+
+
+@keyframes fade-in{
+
+
+	0%{
+		opacity: 0.3;
+	}
+
+	100%{
+		opacity: 1.0;
+		
+	}
+
+}
+
+article img{
+	padding: 20px;
+	width: 100%;
+	display: block;
+}
+
+.content-info{
+	padding: 20px;
+}
+
+article h2{
+	margin: 0;
+}
+
+.employee_card{
+	border: 2px solid #e418d1;
+	background: #1d1501;
+	color:  #FFF;	
+}
+
+
+
+@media (min-width :768px){
+
+
+	#search-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 2%;
+	grid-row-gap: 1%; 
+
+}
+
+	.content-info{
+		float: left;
+		width: 60%;
+	}
+
+	article img{
+		padding: 20px;
+		float: left;
+		width: 40%;
+	}
+
+}

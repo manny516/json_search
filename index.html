@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee search </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Thambi|Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="css/agate.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+</head>
+
+<body>
+
+	<section id="search-box">	
+		<h1> Begin Typing for Results </h1>
+		<label> Filter through listing </label>
+		<input id="search" name="search" type="text">
+	</section>
+
+	<section id="view-code" class="hide-it">
+		<span class="close-code"> X</span>
+		<pre class="js">
+			<code>
+
+//Get the search text field from the HTML document 
+const searchBox = document.getElementById("search");
+const getHeaderTag = document.querySelector('#search-box h1');
+
+
+let ajaxSearch = () => {
+	//Create AJAX request object
+	const request = new XMLHttpRequest();
+
+	//Grab the json file for server
+	request.open("GET","json/employee_list.json");
+
+	//Call on ready state and check if connection was successful
+	request.onreadystatechange = function(){
+
+		if( request.readyState === 4 && request.status === 200){
+
+			// Grab all the JSON data and then parse .
+			let employeeList = JSON.parse(request.responseText);
+
+			//Create regualar expression for casesensitive field values 
+			let regExp = new RegExp(searchBox.value, "i");
+
+			if( searchBox.value.length != 0 ){	
+				getHeaderTag.innerHTML = searchBox.value;
+			}else{
+				getHeaderTag.innerHTML = "Begin Typing for Results";
+			}
+
+			//Map through the json object
+			let mapIt = employeeList.map(function(item){
+
+					//Check if value in the json file returns a match 
+					if( item.name.search(regExp) != -1 || item.title.search(regExp) != -1){
+						let output = `&lt;article class="employee_card group"&gt;\
+						&lt;img src="images/${item.img}.jpg" alt="${item.name}" /&gt;\
+						&lt;div class="content-info"&gt; &lt;h2&gt;${item.name}&lt;/h2&gt;\
+						&lt;h3&gt; Profession : ${item.title} &lt;/h3&gt;\
+						&lt;p&gt; Salary : $${item.salary} &lt;/p&gt;\
+						&lt;p&gt; Bio : ${item.bio} &lt;/p&gt;\
+						&lt;/div&gt;\
+						&lt;/article&gt;`;
+
+							return output;
+					}
+
+				});
+			//Write all Mapped Json data to the DOM
+			document.getElementById("search-container").innerHTML = mapIt.join("");
+		}
+	}
+
+	request.send();
+}
+
+
+// Track search input Keystroke Event and call ajax Search function  
+searchBox.addEventListener("keyup", ajaxSearch);
+
+			</code>
+		</pre>
+	</section>
+
+	<section  id="search-container"> </section>
+	<span class="show-code"> View js Script </span>
+</body>
+
+<script src="js/highlight.pack.js"> </script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="js/script.js"> </script>
+</html>

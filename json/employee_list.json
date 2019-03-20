@@ -1,0 +1,163 @@
+[
+
+	{
+
+	 "name" : "Elizabeth Swanson",
+	 "title" : "Lawyer",
+	 "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat, ante eu tincidunt eleifend, turpis magna volutpat ex, ut blandit felis risus ut odio.",
+	 "img" : "elizabth_swanson",
+     "salary" : "150000" 
+	},
+	{
+	
+	 "name" : "Aliya Johnson",
+	 "title" : "Chef",
+ 	 "bio" : "In facilisis metus ac elit posuere, in mollis orci bibendum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+	 "img" : "aliya_johnson",
+     "salary" : "86000"  
+	},
+	{
+	 "name" : "Meghan Haas",
+	 "title" : "Judge",
+	 "bio" : "Duis luctus, augue eu eleifend tempor, ex erat tempor erat, vitae porttitor est sapien vel magna. Proin in est vitae elit vulputate facilisis.",
+	 "img" : "meghan_haas",
+     "salary" : "230000"  
+	
+	},
+	{
+	 "name" : "Alexia Hurst",
+	 "title" : "Engineer",
+	 "bio" : "Sed pellentesque ex ac sapien accumsan cursus. Duis ligula quam, aliquet at diam eu, maximus placerat erat. Aliquam eu dui risus.",
+	 "img" : "alexia_hurst",
+     "salary" : "112000" 
+	
+	},
+	{
+     "name" : "Lauren Mcgrath",
+	 "title" : "Teacher",
+	 "bio" : "Nam eget commodo tortor. Praesent arcu tortor, placerat eget ex at, egestas cursus augue. Pellentesque in diam nulla. Aliquam ac enim ac justo pretium varius.",
+	 "img" : "lauren_mcgrath",
+     "salary" : "34000" 
+	},
+	{
+	
+	 "name" : "Esme Kennedy",
+	 "title" : "Therapist",
+     "bio" : "Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque id nibh sed quam hendrerit convallis id non eros. Sed in eleifend magna",
+	 "img" : "esme_kennedy",
+     "salary" : "57000" 
+	},
+	{
+	 "name" : "Alina Williams",
+	 "title" : "Beautician",
+	 "bio" : "Mauris sollicitudin luctus vestibulum. Fusce ut congue turpis. Nunc lorem diam, porttitor vel odio nec, facilisis semper arcu. Integer finibus magna nec pulvinar accumsan.",
+	 "img" : "alina_williams",
+     "salary" : "45000"  
+	},
+	{
+	 "name" : "Ruby Estes",
+	 "title" : "Cosmetology",
+	 "bio" : "Donec aliquam mollis massa, nec sodales risus luctus eu. In accumsan luctus varius. Nulla eu arcu metus. Aenean dignissim nisi at accumsan vehicula.",
+	 "img" : "ruby_estes",
+     "salary" : "53000"  
+	},
+  	{
+     "name" : "Caitlyn Sawyer",
+     "title" : "Doctor",
+     "bio" : "Integer ac est id erat tincidunt iaculis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse finibus",
+     "img" : "caitlyn_sawyer",
+     "salary" : "260000" 
+    },
+ 	{
+     "name" : "Leyla Wagner",
+     "title" : "Nurse",
+     "bio" : "eros at pellentesque commodo, ante nulla ultricies augue, id blandit lectus lacus nec diam. Vivamus maximus a dolor eget elementum.",
+     "img" : "leyla_wagner",
+     "salary" : "51000" 
+    },
+ 	{
+     "name" : "Shane Ochoa",
+     "title" : "Actrist",
+     "bio" : "Proin a tellus vitae velit consequat porttitor eu at sapien. Nam sagittis erat eu mi ullamcorper volutpat. Quisque nec velit eu ligula dignissim ornare.",
+     "img" : "shane_ochoa",
+     "salary" : "21000" 
+    },
+ 	{
+     "name" : "Saffron Carpenter",
+     "title" : "Producer",
+     "bio" : "Mauris ut risus a diam efficitur consequat. Aenean facilisis vel ante sit amet mattis. In pharetra fermentum sollicitudin. In ac cursus neque.",
+     "img" : "saffron_carpenter",
+     "salary" : "76000" 
+    },
+ 	{
+     "name" : "Saskia Johnston",
+     "title" : "Graphic Designer",
+     "bio" : "Nam nec mauris sollicitudin, rhoncus felis in, viverra velit. Aliquam at orci nec neque sodales mollis vel nec magna.",
+     "img" : "saskia_johnston",
+     "salary" : "35000" 
+    },
+ 	{
+     "name" : "Rosie Short",
+     "title" : "Receptionist",
+     "bio" : "Praesent eget tempus lorem. Maecenas erat velit, ultrices eget augue nec, rutrum ultricies lorem. Praesent nisl odio, facilisis vehicula purus eu, auctor tristique eros.",
+     "img" : "rosie_short",
+     "salary" : "30000" 
+    },
+ 	{
+     "name" : "Daisy Burke",
+     "title" : "waitress",
+     "bio" : "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent luctus, quam sollicitudin eleifend sollicitudin, augue magna elementum orci, eu cursus justo dui non nunc. Nulla facilisi.",
+     "img" : "daisy_burke",
+     "salary" : "23000" 
+    },
+ 	{
+     "name" : "Taylor Cruz",
+     "title" : "Journlist",
+     "bio" : "Cras mollis venenatis viverra. Suspendisse mi sapien, ullamcorper id mi non, laoreet consequat justo. Cras sit amet lacus laoreet, lobortis urna ut,",
+     "img" : "taylor_cruz",
+     "salary" : "46000" 
+    },
+ 	{
+     "name" : "Talia Wu",
+     "title" : "Fashion Designer",
+     "bio" : "auctor massa. Etiam nibh augue, rhoncus vitae diam ac, pellentesque efficitur ipsum. Curabitur ut fermentum neque. Mauris volutpat euismod tempor.",
+     "img" : "talia_wu",
+     "salary" : "44000" 
+    },
+ 	{
+     "name" : "Amirah Beasley",
+     "title" : "Dentist",
+     "bio" : "Nam aliquet elit augue, nec porttitor ligula porta at. Fusce egestas, nunc sit amet dictum luctus, neque enim molestie elit, vitae venenatis magna elit ut massa.",
+     "img" : "amirah_beasley",
+     "salary" : "190000" 
+    },
+ 	{
+     "name" : "Velma Waters",
+     "title" : "Pastry chef",
+     "bio" : "Donec ac suscipit nisl. Proin dictum lectus metus, quis consequat felis accumsan non.Nam volutpat commodo erat, sit amet efficitur sapien pretium in.",
+     "img" : "velma_water",
+     "salary" : "130000" 
+    },
+ 	{
+     "name" : "Sabrina Contreras",
+     "title" : "Makeup artist",
+     "bio" : "Etiam a maximus risus. Proin ornare risus et magna scelerisque, et euismod nulla volutpat. Nam at lorem id est lacinia lobortis id consectetur turpis.",
+     "img" : "sabrina_contreras",
+     "salary" : "61000" 
+    },
+ 	{
+     "name" : "Carla Sandoval",
+     "title" : "Chemist",
+     "bio" : "Sed consectetur lacus quis nulla venenatis, nec iaculis sem facilisis. Etiam convallis erat neque, nec vehicula ipsum dapibus porta.",
+     "img" : "carla_sandoval",
+     "salary" : "140000" 
+    },
+ 	{
+     "name" : "Angela Walton",
+     "title" : "Musician",
+     "bio" : "Cras ipsum mauris, finibus nec augue in, rhoncus molestie velit. Sed porta nec arcu vehicula laoreet. Pellentesque nisl lorem, consequat ut rutrum a, lacinia ac ligula. Phasellus at nunc nisi.",
+     "img" : "angela_walton",
+     "salary" : "80000" 
+    }
+
+]
