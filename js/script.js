@@ -15,57 +15,57 @@ closeCodeBox.addEventListener("click",() => {
 	
 });
 
-let serialGenerator = () => {
-	let randomSet = ["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-	let createSerial = '' ; 
-	for(let i = 0; i < randomSet.length; i++){
-		randomNumberCount = Math.floor(Math.random() * randomSet.length);
-		createSerial += randomSet[randomNumberCount];
-	}
+// let serialGenerator = () => {
+// 	let randomSet = ["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+// 	let createSerial = '' ; 
+// 	for(let i = 0; i < randomSet.length; i++){
+// 		randomNumberCount = Math.floor(Math.random() * randomSet.length);
+// 		createSerial += randomSet[randomNumberCount];
+// 	}
 
-	return createSerial;
-}
-
-
-if(document.cookie.length != 39 && document.cookie.length == 0){
-	//console.log(document.cookie);	
-	let theModelBox = () => {
-
-		let htmlMarkUp = '<section class="modal-box">\
-					<article class="instructions">\
-					<span class="close-box"> X </span>\
-						<h2>\
-							<span>\
-								<i class="fas fa-exclamation-triangle"></i>\
-							</span>\
-							Filter Note\
-						</h2>\
-						<p> In the search field above filter through the employee index by names or profession.  </p>\
-						<p class="cookie_law"> This site uses cookies and other tracking technologies to assist with navigation and your ability to provide feedback, analyse your use of our products and services, assist with our promotional and marketing efforts, and provide content from third parties. <a href="https://www.cookielaw.org/how-we-use-cookies/" target="_blank">Cookie Policy</a> </p>\
-					</article>\
-					</section>';
-
-		return htmlMarkUp;
-	}
+// 	return createSerial;
+// }
 
 
-	document.body.innerHTML = theHtml + theModelBox();
+// if(document.cookie.length != 39 && document.cookie.length == 0){
+// 	//console.log(document.cookie);	
+// 	let theModelBox = () => {
 
-	const exitButton = document.querySelector('.close-box');
-	const filterNote = document.querySelector('.instructions');
+// 		let htmlMarkUp = '<section class="modal-box">\
+// 					<article class="instructions">\
+// 					<span class="close-box"> X </span>\
+// 						<h2>\
+// 							<span>\
+// 								<i class="fas fa-exclamation-triangle"></i>\
+// 							</span>\
+// 							Filter Note\
+// 						</h2>\
+// 						<p> In the search field above filter through the employee index by names or profession.  </p>\
+// 						<p class="cookie_law"> This site uses cookies and other tracking technologies to assist with navigation and your ability to provide feedback, analyse your use of our products and services, assist with our promotional and marketing efforts, and provide content from third parties. <a href="https://www.cookielaw.org/how-we-use-cookies/" target="_blank">Cookie Policy</a> </p>\
+// 					</article>\
+// 					</section>';
 
-	exitButton.addEventListener("click",function(){
-		console.log("drug dealers ");
-		filterNote.setAttribute("class", "close instructions");
-		document.cookie = `id=${serialGenerator()}; Thu, 30 Jan 2020 12:32:11 UTC ; path= /`;
-		let reloadCode = () => location.reload();
-		setTimeout(reloadCode, 1000);
-		console.log(document.cookie);
-	});
+// 		return htmlMarkUp;
+// 	}
+
+
+// 	document.body.innerHTML = theHtml + theModelBox();
+
+// 	const exitButton = document.querySelector('.close-box');
+// 	const filterNote = document.querySelector('.instructions');
+
+// 	exitButton.addEventListener("click",function(){
+// 		console.log("drug dealers ");
+// 		filterNote.setAttribute("class", "close instructions");
+// 		document.cookie = `id=${serialGenerator()}; Thu, 30 Jan 2020 12:32:11 UTC ; path= /`;
+// 		let reloadCode = () => location.reload();
+// 		setTimeout(reloadCode, 1000);
+// 		console.log(document.cookie);
+// 	});
 
 
 
-}
+// }
 
 //console.log("Random Number : " + ));
 let ajaxSearch = () => {
